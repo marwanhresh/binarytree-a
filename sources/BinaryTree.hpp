@@ -97,12 +97,12 @@ namespace ariel{
 		}
 
 
-		friend ostream& operator<<(ostream& o, const BinaryTree<T>& b){
+		friend  std::ostream& operator<<(std::ostream& o, const BinaryTree<T>& b){
 			printWithLevels(o, b.root);
 			return o;
 		}
 
-		static void printWithLevels(ostream& o, node* p, int indent = 0)
+		static void printWithLevels( std::ostream& o, node* p, int indent = 0)
 		{
 			if (p != nullptr) {
 				if (indent) {
